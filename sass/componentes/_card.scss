@@ -1,15 +1,24 @@
 .card {
-  width: 300px;
+  width: 400px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 12px;
   overflow: hidden;
   margin: 20px;
 
+  @media (max-width: 500px) {
+    width: 300px;
+    border-radius: 5px;
+  }	
+
   img {
     width: 100%;
-    height: 200px;
+    height: 400px;
     object-fit: cover;
+
+    @media (max-width: 500px) {
+      height: 200px;
+    }	  
   }
   
   h3 {

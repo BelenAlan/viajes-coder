@@ -33,17 +33,28 @@ textarea {
 }
 
 .card {
-  width: 300px;
+  width: 400px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 12px;
   overflow: hidden;
   margin: 20px;
 }
+@media (max-width: 500px) {
+  .card {
+    width: 300px;
+    border-radius: 5px;
+  }
+}
 .card img {
   width: 100%;
-  height: 200px;
+  height: 400px;
   object-fit: cover;
+}
+@media (max-width: 500px) {
+  .card img {
+    height: 200px;
+  }
 }
 .card h3 {
   font-size: 1.5rem;
@@ -128,12 +139,26 @@ textarea {
   line-height: 1.5;
   font-size: 18px;
 }
+@media (max-width: 500px) {
+  .nosotros p {
+    font-size: 14px;
+  }
+}
 
 .servicios {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.servicios .cards {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .servicios .cards {
+    flex-direction: column;
+  }
 }
 
 .viajes {
